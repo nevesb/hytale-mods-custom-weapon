@@ -1,39 +1,146 @@
 {
+  "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
     "Name": "server.items.Crystal_Sword.name",
     "Description": "server.items.Crystal_Sword.description"
   },
-  "Interactions": {
-    "Primary": "Sword_Primary",
-    "Secondary": "Sword_Secondary"
-  },
-  "Quality": "Rare",
+  "Model": "Items/Weapons/Crystal/Crystal_Sword.blockymodel",
+  "Texture": "Items/Weapons/Crystal/Crystal_Sword.png",
   "Icon": "Icons/ItemsGenerated/Crystal_Sword.png",
-  "PlayerAnimationsId": "Sword",
-  "Tags": ["Weapon", "Sword", "Crystal"],
-  "MaxStack": 1,
-  "ItemLevel": 3,
-  "Damage": {
-    "Base": 18,
-    "Type": "Physical",
-    "AttackSpeed": 1.2
+  "Quality": "Rare",
+  "ItemLevel": 30,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
   },
-  "Durability": {
-    "MaxDurability": 450
-  },
-  "CraftingIngredients": [
-    {
-      "ItemId": "Block_Crystal_Glow",
-      "Count": 4
-    },
-    {
-      "ItemId": "Iron_Ingot",
-      "Count": 2
-    }
-  ],
   "IconProperties": {
-    "Scale": 0.7,
-    "Rotation": [22.5, 45, 22.5],
-    "Translation": [0, -8]
-  }
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      180,
+      45
+    ],
+    "Translation": [
+      -23,
+      -23
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 14
+            }
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 14
+            }
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 24
+            }
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 26
+            }
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 72
+            }
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 8,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 5.0,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Block_Crystal_Glow",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Sword"
+        ],
+        "Id": "Weapon_Bench"
+      }
+    ]
+  },
+  "Light": {
+    "Radius": 2,
+    "Color": "#468"
+  },
+  "MaxDurability": 450,
+  "DurabilityLossOnHit": 0.18
 }
