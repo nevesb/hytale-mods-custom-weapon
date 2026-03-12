@@ -1,0 +1,15 @@
+{
+  "Group": "HytaleModdingManual",
+  "Name": "CreateACustomWeapon",
+  "Version": "1.0.0",
+  "Description": "Implements the Create A Weapon tutorial with a custom crystal sword",
+  "Authors": [
+    {
+      "Name": "HytaleModdingManual"
+    }
+  ],
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "IncludesAssetPack": true,
+  "TargetServerVersion": "2026.02.19-1a311a592"
+}

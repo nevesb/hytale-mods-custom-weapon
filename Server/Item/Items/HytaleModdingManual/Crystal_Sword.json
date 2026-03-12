@@ -1,0 +1,39 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Crystal_Sword.name",
+    "Description": "server.items.Crystal_Sword.description"
+  },
+  "Interactions": {
+    "Primary": "Sword_Primary",
+    "Secondary": "Sword_Secondary"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/Crystal_Sword.png",
+  "PlayerAnimationsId": "Sword",
+  "Tags": ["Weapon", "Sword", "Crystal"],
+  "MaxStack": 1,
+  "ItemLevel": 3,
+  "Damage": {
+    "Base": 18,
+    "Type": "Physical",
+    "AttackSpeed": 1.2
+  },
+  "Durability": {
+    "MaxDurability": 450
+  },
+  "CraftingIngredients": [
+    {
+      "ItemId": "Block_Crystal_Glow",
+      "Count": 4
+    },
+    {
+      "ItemId": "Iron_Ingot",
+      "Count": 2
+    }
+  ],
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [0, -8]
+  }
+}
